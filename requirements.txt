@@ -1,0 +1,4 @@
+soundfile
+pyaudio
+numpy
+matplotlib==3.7.1  # Ajuste conforme necessário
