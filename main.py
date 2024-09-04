@@ -113,14 +113,14 @@ class SoundMasterPro:
         self.settings_title = ttk.Label(self.settings_frame, text="Configurações", font=("Roboto", 24, 'bold'))
         self.settings_title.pack(pady=10)
 
-        self.sample_rate_var = tk.IntVar(value=44100)
+        self.sample_rate_var = tk.IntVar(value=8000)
         self.sample_rate_label = ttk.Label(self.settings_frame, text="Taxa de Amostragem:")
         self.sample_rate_label.pack()
         self.sample_rate_combobox = ttk.Combobox(self.settings_frame, textvariable=self.sample_rate_var, 
                                                  values=[8000, 16000, 44100, 48000, 96000])
         self.sample_rate_combobox.pack()
 
-        self.format_var = tk.StringVar(value="wav")
+        self.format_var = tk.StringVar(value="mp3")
         self.format_label = ttk.Label(self.settings_frame, text="Formato de Áudio:")
         self.format_label.pack()
         self.format_combobox = ttk.Combobox(self.settings_frame, textvariable=self.format_var, 
